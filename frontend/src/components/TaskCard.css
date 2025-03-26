@@ -1,0 +1,205 @@
+/* Task Card Styles */
+.task-card {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+/* Form Styles */
+.task-card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task-card__label {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.25rem;
+}
+
+.task-card__input,
+.task-card__textarea,
+.task-card__select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.task-card__input:focus,
+.task-card__textarea:focus,
+.task-card__select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.task-card__textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Button Styles */
+.task-card__button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-card__button--cancel {
+    background-color: #f3f4f6;
+    color: #4a5568;
+}
+
+.task-card__button--save {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.task-card__button--back {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #f3f4f6;
+    color: #4a5568;
+}
+
+.task-card__button--edit {
+    background-color: #48bb78;
+    color: white;
+}
+
+.task-card__button--delete {
+    background-color: #f56565;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.task-card__button--add-subtask {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #6c59e4;
+    color: white;
+}
+
+.task-card__button--toggle {
+    background-color: #27057c;
+    color: #2b58a6;
+    margin-top: 0.5rem;
+}
+
+.task-card__title {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.task-card__task-title {
+    font-size: 1.25rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.task-card__description {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    min-height: 50px;
+}
+
+.task-card__status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.task-card__status--done {
+    background-color: #48bb78;
+    color: white;
+}
+
+.task-card__status--pending {
+    background-color: #ecc94b;
+    color: #1a202c;
+}
+
+.task-card__due-date {
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.task-card__subtasks {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.task-card__subtask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: #5192d4;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-card__subtask-status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.task-card__subtask-status--done {
+    background-color: #48bb78;
+    color: white;
+}
+
+.task-card__subtask-status--pending {
+    background-color: #ecc94b;
+    color: #1a202c;
+}
+
+.task-card__delete-confirmation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 10;
+}
+
+.task-card__delete-message {
+    margin-bottom: 1rem;
+    color: #4a5568;
+}
+
+.task-card__button--confirm-delete {
+    background-color: #f56565;
+    color: rgb(142, 121, 121);
+    margin-right: 0.5rem;
+}
+
+.task-card__button--cancel-delete {
+    background-color: #0d100d;
+    color: rgb(142, 121, 121);
+    color: #416094;
+    margin-right: 0.5rem;
+}

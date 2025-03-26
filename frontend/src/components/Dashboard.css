@@ -1,0 +1,89 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(158, 211, 236);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 0.5rem;
+}
+
+.dashboard-error {
+    color: #e53e3e;
+    background-color: #fff5f5;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #fecaca;
+}
+
+.add-task-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-task-button:hover {
+    background-color: #2563eb;
+}
+
+.tasks-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.task-item {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid #edf2f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.no-tasks-message {
+    text-align: center;
+    color: #718096;
+    padding: 2rem;
+}
+
+.edit-task-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 275px; /* Increased width to make it longer */
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem; /* Adjusted padding for better proportions */
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.edit-task-button:hover {
+    background-color: #2563eb;
+}
+
+.edit-task-button svg {
+    width: 1rem;
+    height: 1rem;
+}

@@ -1,0 +1,73 @@
+.task-display {
+    max-width: 500px;
+    margin: 2rem auto 3rem auto; /* Added more space on the bottom */
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.task-title {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 0.5rem;
+}
+
+.task-field {
+    color: #4a5568;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.task-field strong {
+    color: #2d3748;
+    margin-right: 0.5rem;
+}
+
+.toggle-subtasks-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0c325a;
+    border: none;
+    border-radius: 0.25rem;
+    color: #cfd4dc;
+    margin-top: 0rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-subtasks-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.subtasks-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.subtask-item {
+    background-color: #b9cde0;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #edf2f7;
+}
+
+.subtask-title {
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    
+}
+
+.subtask-field {
+    color: #4a5568;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.subtask-field strong {
+    color: #2d3748;
+    margin-right: 0.5rem;
+}
