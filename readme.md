@@ -159,12 +159,12 @@ python -m pytest tests/test.py
 # .env config examples:
 ## Backkend 
 
-FLASK_ENV=development
-SECRET_KEY=secret
-JWT_SECRET=secret
-JWT_EXPIRATION=86400
-DATABASE_URL=mysql+mysqlconnector://root:my-secret-pw@localhost:3306/task_manager
-PORT=5000
+- FLASK_ENV=development
+- SECRET_KEY=secret
+- JWT_SECRET=secret
+- JWT_EXPIRATION=86400
+- DATABASE_URL=mysql+mysqlconnector://root:my-secret-pw@localhost:3306/task_manager
+- PORT=5000
 
 # Frontend
-API_URL=http://localhost:5000/api
+- VITE_API_URL=http://localhost:5000/api
